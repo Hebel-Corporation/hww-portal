@@ -75,8 +75,8 @@
       border-bottom-right-radius: 128px;
     } */
 
-    .bg-blue-teal-gradient {
-      background: rgb(99, 134, 167);
+    .bg-white-green-gradient {
+      
       background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(107, 215, 40) 200%);
     }
 
@@ -95,33 +95,36 @@
     <!-- start header -->
     <header class="absolute top-0 left-0 w-full z-50 px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64">
 
-      <div class="flex flex-wrap items-center justify-between py-6">
-        <div class="w-1/2 md:w-auto">
-          <a href="index.html" class="text-white font-bold text-2xl">
-            <img src="src/images/logo_HWW.png" alt="" srcset="" class="h-24">
+      <div class="flex flex-wrap md:justify-between py-6">
+
+        <div class="w-full md:w-auto flex justify-center">
+          <a href="index.html" class="">
+            <img src="src/images/logo_HWW.png" alt="" srcset="" class="h-32 w-32">
           </a>
         </div>
 
-        <label for="menu-toggle" class="pointer-cursor md:hidden block"><svg class="fill-current text-white"
-            xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-            <title>menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+       
+        <label for="menu-toggle" class="absolute right-4 pointer-cursor md:hidden block">
+          <svg class="fill-current text-white"
+          xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+          <title>menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
           </svg></label>
 
         <input class="hidden" type="checkbox" id="menu-toggle">
+       
 
         <div class="hidden md:block w-full md:w-auto" id="menu">
           <nav
-            class="w-full bg-white md:bg-transparent rounded shadow-lg px-6 py-4 mt-4 text-center md:p-0 md:mt-0 md:shadow-none">
+            class="w-full bg-white text-primary2 md:text-green-700 md:bg-transparent rounded shadow-lg px-6 py-4 mt-4 text-center md:p-0 md:mt-0 md:shadow-none">
             <ul class="md:flex items-center">
-              <li><a class="py-2 inline-block  md:hidden lg:block font-semibold" href="#">A propos</a></li>
-              <li class="md:ml-4"><a class="py-2 inline-block  md:px-2 font-semibold"
-                  href="#">Produits</a></li>
+              <li><a class="py-2 inline-block  md:hidden lg:block font-semibold" href="#about">A propos</a></li>
+              <li class="md:ml-4"><a class="py-2 inline-block  md:px-2 font-semibold" href="#products">Produits</a></li>
               <!-- <li class="md:ml-4"><a class="py-2 inline-block md:px-2 font-semibold"
                   href="#">Prix</a></li> -->
-              <li class="md:ml-4"><a class="py-2 inline-block  md:px-2 font-semibold" href="#">Nous contacter</a></li>
+              <li class="md:ml-4"><a class="py-2 inline-block  md:px-2 font-semibold" href="#contact">Nous contacter</a></li>
               <li class="md:ml-6 mt-3 md:mt-0">
-                <a class="inline-block font-semibold px-4 py-2  bg-primary1 md:bg-transparent border border-black md:hover:bg-primary2 md:hover:border-primary2 md:hover:text-white rounded"
+                <a class="inline-block font-semibold px-4 py-2  bg-primary2 text-white md:text-green-700 md:bg-transparent border md:border-green-700 md:hover:bg-primary2 md:hover:border-primary2 md:hover:text-white rounded"
                   href="#">Commencer</a>
               </li>
             </ul>
@@ -132,66 +135,81 @@
     <!-- end header -->
 
     <!-- start hero -->
-    <section class="cover bg-blue-teal-gradient relative bg-blue-200 px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 overflow-hidden py-48 flex
+    <section class="cover bg-white-green-gradient relative bg-blue-200 px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 overflow-hidden pt-48 md:pt-36 pb-12 flex
     items-center min-h-screen">
       <div class="h-full absolute top-0 left-0 z-0">
-        <img src="src/images/mlm_network.jpg" alt="" class="w-full h-full object-cover opacity-10">
+        <img src="src/images/mlm_network.jpg" alt="" class="w-screen h-full object-cover opacity-15">
       </div>
 
       <div class="lg:w-3/4 xl:w-2/4 relative z-10 h-100 lg:mt-16">
-        <div>
-          <h1 class="text-primary3 text-4xl md:text-5xl xl:text-6xl font-bold leading-tight">Le bonheur commence par un corps en meilleure santé.</h1>
-          <p class="text-primary2 text-xl md:text-2xl leading-snug mt-8">Welcome to the Health Winning World !</p>
-          <a href="#" class="px-8 py-4 bg-primary2 text-white rounded inline-block mt-8 font-semibold">Commencer</a>
+        <div class="flex flex-col md:block">
+          <h1 class="text-primary3 text-3xl md:text-5xl xl:text-6xl font-bold leading-tight text-center md:text-start">Le bonheur commence par un corps en meilleure santé.</h1>
+          <p class="text-green-700 text-xl text-center md:text-start md:text-2xl leading-snug mt-8">Welcome to the Health Winning World !</p>
+          <a href="#" class="text-center px-8 py-4 bg-primary2 text-white rounded inline-block mt-8 font-semibold">Commencer</a>
         </div>
       </div>
     </section>
     <!-- end hero -->
 
     <!-- start about -->
-    <section class="relative px-4 py-16 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 lg:py-12">
+    <section id="about" class="relative px-4 py-6 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 lg:py-12">
       <div class="flex flex-col lg:flex-col ">
 
-        <div class="w-full lg:w-full lg:px-8">
-          <p class="text-xl text-justify mt-4 font-extralight">Health Winning World est une entreprise de marketing de réseau crée en 2023 par une association des médecins malaisiens, chinois, thailandais
+        <div class="w-full lg:w-full">
+          <p class="text-lg text-justify mt-4 font-extralight">Health Winning World est une entreprise de marketing de réseau crée en 2023 par une association des médecins malaisiens, chinois, thailandais
              oeuvrant dans la recherche sur le traitement et prise en charge des pathologies chroniques. Cette association dénommée Medecin Advance Research Association (MARA) est représentée par Dr KAMVAM BIN FARVAS.
           </p>
         </div>
 
-        <div class="md:flex w-full lg:px-8 mt-12 md:space-x-8">
-          <div class="md:flex md:w-1/2">
-            <div>
-              <div class="w-16 h-16 bg-primary2 rounded-full flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-heart-pulse text-white" viewBox="0 0 16 16">
-                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053.918 3.995.78 5.323 1.508 7H.43c-2.128-5.697 4.165-8.83 7.394-5.857q.09.083.176.171a3 3 0 0 1 .176-.17c3.23-2.974 9.522.159 7.394 5.856h-1.078c.728-1.677.59-3.005.108-3.947C13.486.878 10.4.28 8.717 2.01zM2.212 10h1.315C4.593 11.183 6.05 12.458 8 13.795c1.949-1.337 3.407-2.612 4.473-3.795h1.315c-1.265 1.566-3.14 3.25-5.788 5-2.648-1.75-4.523-3.434-5.788-5"/>
-                <path d="M10.464 3.314a.5.5 0 0 0-.945.049L7.921 8.956 6.464 5.314a.5.5 0 0 0-.88-.091L3.732 8H.5a.5.5 0 0 0 0 1H4a.5.5 0 0 0 .416-.223l1.473-2.209 1.647 4.118a.5.5 0 0 0 .945-.049l1.598-5.593 1.457 3.642A.5.5 0 0 0 12 9h3.5a.5.5 0 0 0 0-1h-3.162z"/>
-              </svg>
-            </div>
-            </div>
-
-            <div class="md:ml-8 mt-4 md:mt-0">
-              <h4 class="text-xl font-bold leading-tight">Objectif 1</h4>
-              <p class="mt-2 leading-relaxed font-extralight text-lg">Contribuer à l'amélioration de la santé de la population du monde par la promotion des soins de santé, 
-                l'éducation sanitaire et nutritionnelle.</p>
-            </div>
-          </div>
-
-          <div class="md:flex mt-4 md:w-1/2">
-            <div>
-              <div class="w-16 h-16 bg-primary3 rounded-full flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cash-coin text-white" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0"/>
-                  <path d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195z"/>
-                  <path d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083q.088-.517.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z"/>
-                  <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 6 6 0 0 1 3.13-1.567"/>
-                </svg>
-              </div>
-            </div>
-            <div class="md:ml-8 mt-4 md:mt-0">
-              <h4 class="text-xl font-bold leading-tight">Objectif 2</h4>
-              <p class="mt-2 leading-relaxed font-extralight text-lg">Améliorer la condition des vies par l'auto-prise en charge, l'entrepreneuriat et le développement personnel.</p>
+        <div class="flex flex-col md:flex-row w-full bg-gray-100 p-4 mt-12 gap-8">
+          
+          <div class="md:flex flex-col md:w-1/2">
+            <h4 class="text-xl font-bold leading-tight text-center">Objectif 1</h4>
+          
+            <div class="md:ml-8 mt-4 md:mt-0 text-justify">
+              
+              <p class="mt-2">
+                <div class="inline-block float-left mr-4">
+                  <div class="w-16 h-16 bg-primary2 rounded-full flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-heart-pulse text-white" viewBox="0 0 16 16">
+                      <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053.918 3.995.78 5.323 1.508 7H.43c-2.128-5.697 4.165-8.83 7.394-5.857q.09.083.176.171a3 3 0 0 1 .176-.17c3.23-2.974 9.522.159 7.394 5.856h-1.078c.728-1.677.59-3.005.108-3.947C13.486.878 10.4.28 8.717 2.01zM2.212 10h1.315C4.593 11.183 6.05 12.458 8 13.795c1.949-1.337 3.407-2.612 4.473-3.795h1.315c-1.265 1.566-3.14 3.25-5.788 5-2.648-1.75-4.523-3.434-5.788-5"/>
+                      <path d="M10.464 3.314a.5.5 0 0 0-.945.049L7.921 8.956 6.464 5.314a.5.5 0 0 0-.88-.091L3.732 8H.5a.5.5 0 0 0 0 1H4a.5.5 0 0 0 .416-.223l1.473-2.209 1.647 4.118a.5.5 0 0 0 .945-.049l1.598-5.593 1.457 3.642A.5.5 0 0 0 12 9h3.5a.5.5 0 0 0 0-1h-3.162z"/>
+                    </svg>
+                  </div>
+                  
+                </div>
+                <span class="leading-relaxed font-extralight text-lg">
+                  Contribuer à l'amélioration de la santé de la population du monde par la promotion des soins de santé, 
+                l'éducation sanitaire et nutritionnelle.
+                </span>
+                </p>
             </div>
           </div>
+
+          <div class="md:flex flex-col md:w-1/2">
+            <h4 class="text-xl font-bold leading-tight text-center">Objectif 2</h4>
+          
+            <div class="md:ml-8 mt-4 md:mt-0 text-justify">
+              
+              <p class="mt-2">
+                <div class="inline-block float-left mr-4">
+                  <div class="w-16 h-16 bg-primary3 rounded-full flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cash-coin text-white" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0"/>
+                      <path d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195z"/>
+                      <path d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083q.088-.517.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z"/>
+                      <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 6 6 0 0 1 3.13-1.567"/>
+                    </svg>
+                  </div>
+                  
+                </div>
+                <span class="leading-relaxed font-extralight text-lg">
+                  Améliorer la condition des vies par l'auto-prise en charge, l'entrepreneuriat et le développement personnel.
+                </span>
+                </p>
+            </div>
+          </div>
+          
         </div>
       </div>
 
@@ -199,10 +217,10 @@
     <!-- end about -->
 
     <!-- start Products -->
-    <section class="relative bg-white px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 pb-16">
+    <section id="products" class="relative bg-white px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 pb-16">
       <div class="">
         <h2 class="text-3xl leading-tight font-bold text-primary1">Nos différents produits</h2>
-        <p class="text-gray-600 mt-2">
+        <p class="text-gray-600 mt-2 font-extralight text-lg">
           Ces produits sont des suppéments alimentaires pour combler la carence en nutriment nécessaire au fonctionnement de l'organisme.
           Ils nettoient, reconstruisent, réparent et maintiennent l'organisme.
         </p>
@@ -230,12 +248,12 @@
         <div class="md:px-4 md:w-1/2 xl:w-1/4 mt-4 md:mt-0">
           <div class="bg-white rounded border border-gray-300 ">
             <div class="w-full h-48 overflow-hidden bg-gray-300 flex items-center justify-center">
-              <img class="h-26 w-26" src="src/images/products/anti_malaria.png" alt="" srcset="">
+              <img class="h-26 w-26" src="src/images/products/veggies.jpg" alt="" srcset="">
             </div>
             <div class="p-4">
         
-              <p class="text-lg font-semibold leading-tight mt-4 text-primary1">Anti Malaria Tea</p>
-              <p class="text-gray-600 mt-1">Ce produit assure une élimination rapide et complète du parasite plasmodium du sang du patient
+              <p class="text-lg font-semibold leading-tight mt-4 text-primary1">Veggies</p>
+              <p class="text-gray-600 mt-1">Ce produit renforce l'immunité et l'énergie du corps
               </p>
     
             </div>
@@ -246,12 +264,12 @@
         <div class="md:px-4 md:w-1/2 xl:w-1/4 mt-4 md:mt-0">
           <div class="bg-white rounded border border-gray-300 ">
             <div class="w-full h-48 overflow-hidden bg-gray-300 flex items-center justify-center">
-              <img class="h-26 w-26" src="src/images/products/infection-removal.png" alt="" srcset="">
+              <img class="h-26 w-26" src="src/images/products/neuro_health.jpg" alt="" srcset="">
             </div>
             <div class="p-4">
         
-              <p class="text-lg font-semibold leading-tight mt-4 text-primary1">Infection Removal</p>
-              <p class="text-gray-600 mt-1">Ce produit a un bon effet d'élimination de la chaleur, de détoxification, d'antivirus et d'anti-inflamatoire
+              <p class="text-lg font-semibold leading-tight mt-4 text-primary1">Neuro Health</p>
+              <p class="text-gray-600 mt-1">Ce produit a un bon pour la santé du cerveau. Il prend en charge la mémoire et la concentration
               </p>
     
             </div>
@@ -276,13 +294,13 @@
 
       </div>
     </section>
-    <!-- end blog -->
+    <!-- end Products -->
 
     <!-- start cta -->
-    <section
-      class="relative bg-blue-teal-gradient px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-12 text-center md:text-left">
+    <section id="contact"
+      class="relative bg-white-green-gradient px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-12 text-center md:text-left">
       <div class="md:flex md:items-center md:justify-center">
-        <h2 class="md:text-xl font-medium text-gray-900">Contactez-nous aujourd'hui! <br class="block md:hidden">Ecrivez à healthwinningworld@gmail.com</h2>
+        <h2 class="md:text-xl font-medium text-green-700">Contactez-nous aujourd'hui! <br class="block md:hidden">Ecrivez à healthwinningworld@gmail.com</h2>
       </div>
     </section>
     <!-- end cta -->
